@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mi página personal</title>
+<style>
+h1{
+  text-align: center;
+}
+h2,h3{background-color: hsl(120, 60%, 70%);}   /* pastel green */
+h1{color:blue;}
+h2{color:blue;}
+h3{color:blue;}
+h1{
+  font-family: "Times New Roman", Times, serif;
+}
+h2{
+  font-family: "Times New Roman", Times, serif;
+}
+h3{
+  font-family: "Times New Roman", Times, serif;
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+p{
+  text-align: justify;
+}
+th{background-color: hsl(120, 60%, 70%);}   /* pastel green */
+ {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+<head>
+<body>
+  <h1> Marjorie Rangel</h1>      
+<br>
+<img src="marjorie.jpeg" width="150" height="150" alt="Marjorie Rangel"  align = “center”>
+<br>
+<h2>Biografía</h2>
+<p> Me llamo Marjorie Rangel, naci el 30 de junio del 2003</p>
+<hr >      
+<h2>Favoritos</h2>
+<br>
+<h3>Platos</h3>
+<ul>
+<li>Hamburguesa</li>
+<li>Sushi</li>
+<li>Quesadilla</li>
+</ul>
+<br>
+<h3>Pasatiempos</h3>
+<ol>
+<li>Dormir</li>
+<li>Escuchar música</li>
+<li>Dibujar</li>
+</ol>
+
+<h3>Canciones</h3>
+<table  border="1">
+<tr>
+<th>Genero</th>
+<th>Nombre</th>
+<th>Autor</th>
+<th>Audio</th>
+</tr>
+<tr>
+<td>Jazz</td>
+<td>Last train home</td>
+<td>Pat Metheny</td>
+<td><audio controls>
+  <source src="Last train home.mp3" type="audio/mpeg">
+</audio></td>
+</tr>
+<tr>
+<td>Dance</td>
+<td>Sea</td>
+<td>BTS</td>
+<td><audio controls>
+  <source src="Sea.mp3" type="audio/mpeg">
+</audio></td>
+</tr>
+<tr>
+<td>Alternativa</td>
+<td>Prayer X</td>
+<td>King Gnu</td>
+<td><audio controls>
+  <source src="Prayer X.mp3" type="audio/mpeg">
+</audio></td>
+</tr>
+</table>
+
+<h3>Libro</h3>
+<center><img src="no soy seth.jpg"></center>
+<br>
+<a href="https://www.amazon.com/-/es/ITellYou-Something/dp/9807909139">No soy Seth</a> 
+
+<h3>Película</h3>
+<center><img src="clueless.jpg"></center>
+<br>
+<video width="320" height="240" controls>
+  <source src="Clueless Trailer.mp4" type="video/mp4">
+</video>
+<br>
+<h2>Formulario</h2>
+<p>Para mayor información contáctanos.</p>
+
+<div class="container">
+  <form action="/action_page.php">
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">Nombre</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="nombre" placeholder="Su nombre..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Correo</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="Correo" placeholder="Su correo..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="country">Asunto</label>
+    </div>
+    <div class="col-75">
+<input type="text" id="country" name="Asunto" placeholder="Su asunto..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="subject">Mensaje</label>
+    </div>
+    <div class="col-75">
+      <textarea id="subject" name="Mensaje" placeholder="Escriba su mensaje.." style="height:200px"></textarea>
+    </div>
+  </div>
+  <div class="row">
+    <input type="submit" value="Enviar">
+  </div>
+  </form>
+</div>
+
+
+</body>
+
+</html>
